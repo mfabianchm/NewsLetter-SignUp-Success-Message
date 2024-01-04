@@ -20,3 +20,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+@media (max-width: 996px) {
+  body {
+    margin-top: 60px;
+  }
+}

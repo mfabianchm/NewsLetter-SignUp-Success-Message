@@ -1,4 +1,4 @@
-<main class="main">
+<main class="main" (window:resize)="onResize($event)">
   <div class="left-container">
     <h1>Stay updated!</h1>
     <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -30,5 +30,5 @@
       <button type="submit">Subscribe to monthly newsletter</button>
     </form>
   </div>
-  <img src="../assets/illustration-sign-up-desktop.svg" alt="hero-img" />
+  <img src="{{ home_img }}" alt="hero-img" />
 </main>
