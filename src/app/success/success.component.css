@@ -1,0 +1,35 @@
+main {
+  background-color: var(--White);
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+img {
+  width: 45px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: 700;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  padding: 20px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: var(--Tomato);
+  color: var(--White);
+  cursor: pointer;
+}

@@ -1,0 +1,118 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  gap: 10px;
+}
+
+p,
+label,
+input::placeholder,
+button {
+  font-size: 16px;
+}
+
+input {
+  width: 95%;
+  border: 1px var(--Grey) solid;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+input:hover {
+  cursor: pointer;
+  border: 1px var(--Dark-Slate-Grey) solid;
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  color: var(--White);
+  background-color: var(--Dark-Slate-Grey);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Tomato);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+label {
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  gap: 10px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+li::before {
+  content: "";
+  display: block;
+  background: url("../../assets/icon-success.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.left-container {
+  width: 70%;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+.error {
+  color: var(--Tomato);
+  margin: 0;
+  font-weight: 700;
+}
+
+.label-error {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-form {
+  color: var(--tomato);
+  border: 1px var(--Tomato) solid;
+  background-color: hsl(4, 81%, 86%);
+}
+
+.error-form:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 996px) {
+  .main {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+}
